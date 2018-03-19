@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[c_级数]]></title>
+    <url>%2F2018%2F03%2F19%2Fc_%E7%BA%A7%E6%95%B0%2F</url>
+    <content type="text"><![CDATA[初步建立12345678910111213141516171819#include &lt;iostream&gt;#include &lt;cmath&gt;using namespace std;double fx(int x) //定义通项式&#123; double s; s=1/pow(x,2); //在此修改通项 return s;&#125;int main()&#123; int i=1;int b=10000;double t=0; cout&lt;&lt;&quot;请输入最后一项:&quot;; cin&gt;&gt;b; for(i;i&lt;=b;i++) t+=fx(i); cout&lt;&lt;&quot;结果为：&quot;&lt;&lt;t; return 0;&#125; 效果还行,但是无法获得精度 改进未完]]></content>
+      <tags>
+        <tag>c</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[py_requests简单爬取]]></title>
     <url>%2F2018%2F03%2F18%2Fpy_requests%E7%AE%80%E5%8D%95%E7%88%AC%E5%8F%96%2F</url>
     <content type="text"><![CDATA[学习使用requests模块爬取简单网页 首先安装requests模块pip install requests 初步建立12345import requestsurl = input(&quot;请输入地址：&quot;)r = requests.get(url)requests.encoding=&apos;utf-8&apos;print(r.text) 效果还行]]></content>
