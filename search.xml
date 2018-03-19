@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[py_requests简单爬取]]></title>
+    <url>%2F2018%2F03%2F18%2Fpy_requests%E7%AE%80%E5%8D%95%E7%88%AC%E5%8F%96%2F</url>
+    <content type="text"><![CDATA[学习使用requests模块爬取简单网页 首先安装requests模块pip install requests 初步建立12345import requestsurl = input(&quot;请输入地址：&quot;)r = requests.get(url)requests.encoding=&apos;utf-8&apos;print(r.text) 效果还行]]></content>
+      <tags>
+        <tag>py</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[c_定积分]]></title>
+    <url>%2F2018%2F03%2F17%2Fc_%E5%AE%9A%E7%A7%AF%E5%88%86%2F</url>
+    <content type="text"><![CDATA[求定积分近似值初步建立#include &lt;iostream&gt; #include &lt;cmath&gt; using namespace std; double fx(double x=0) //定义被积函数 { double s; s=pow(2,x); //在此修改函数 return s; double gx(double a=0,double b=0,int n=1) //定义简单积分，先默认a&lt;=b { int i=1;double l=(b-a)/n;double s=0; for(i;i&lt;=n;i++) s+=fx(a+i*l); return s; } int main() //加入防错系统 { double a=0;double b=0;int n=1; cout&lt;&lt;&quot;请输入积分下限，上限，分割份数:&quot;; cin&gt;&gt;a&gt;&gt;b&gt;&gt;n; if(a&lt;=b) cout&lt;&lt;&quot;所求积分为:&quot;&lt;&lt;gx(a,b,n)&lt;&lt;endl; else cout&lt;&lt;&quot;所求积分为:&quot;&lt;&lt;-gx(b,a,n)&lt;&lt;endl; return 0; } 由于使用过剩近似值代替，误差较大，应做出改进 改进近似值#include &lt;iostream&gt; #include &lt;cmath&gt; using namespace std; double fx(double x=0) //定义被积函数 { double s; s=pow(2,x); //在此修改函数 return s; } double gx(double a=0,double b=0,int n=1) //定义简单积分，先默认a&lt;=b,过剩 { int i=1;double l=(b-a)/n;double s=0; for(i;i&lt;=n;i++) s+=fx(a+i*l); s*=l; return s; } double hx(double a=0,double b=0,int n=1) //定义简单积分，先默认a&lt;=b，不足 { int i=0;double l=(b-a)/n;double s=0; for(i;i&lt;n;i++) s+=fx(a+i*l); s*=l; return s; } int main() //加入防错系统 { double a=0;double b=0;int n=1; cout&lt;&lt;&quot;请输入积分下限，上限，分割份数:&quot;; cin&gt;&gt;a&gt;&gt;b&gt;&gt;n; if(a&lt;=b) cout&lt;&lt;&quot;所求积分在 &quot;&lt;&lt;hx(a,b,n)&lt;&lt;&quot;到 &quot;&lt;&lt;gx(a,b,n)&lt;&lt;&quot;之间,平均值为 &quot;&lt;&lt;(hx(a,b,n)+gx(a,b,n))/2&lt;&lt;endl; else cout&lt;&lt;&quot;所求积分在 &quot;&lt;&lt;-hx(b,a,n)&lt;&lt;&quot;到 &quot;&lt;&lt;-gx(b,a,n)&lt;&lt;&quot;之间,平均值为 &quot;&lt;&lt;-(hx(b,a,n)+gx(b,a,n))/2&lt;&lt;endl; return 0; } 尚不能比较两近似值大小 改进：比较近似值大小#include &lt;iostream&gt; #include &lt;cmath&gt; using namespace std; double fx(double x=0) //定义被积函数 { double s; s=pow(2,x); //在此修改函数 return s; } double gx(double a=0,double b=0,int n=1) //定义简单积分，先默认a&lt;=b,过剩 { int i=1;double l=(b-a)/n;double s=0; for(i;i&lt;=n;i++) s+=fx(a+i*l); s*=l; return s; } double hx(double a=0,double b=0,int n=1) //定义简单积分，先默认a&lt;=b，不足 { int i=0;double l=(b-a)/n;double s=0; for(i;i&lt;n;i++) s+=fx(a+i*l); s*=l; return s; } int main() //加入防错系统 { double a=0;double b=0;int n=1; cout&lt;&lt;&quot;请输入积分下限，上限，分割份数:&quot;; cin&gt;&gt;a&gt;&gt;b&gt;&gt;n; if(a&lt;=b) { if(hx(a,b,n)&lt;gx(a,b,n)) cout&lt;&lt;&quot;所求积分在 &quot;&lt;&lt;hx(a,b,n)&lt;&lt;&quot;到 &quot;&lt;&lt;gx(a,b,n)&lt;&lt;&quot;之间,平均值为 &quot;&lt;&lt;(hx(a,b,n)+gx(a,b,n))/2&lt;&lt;endl; else cout&lt;&lt;&quot;所求积分在 &quot;&lt;&lt;gx(a,b,n)&lt;&lt;&quot;到 &quot;&lt;&lt;hx(a,b,n)&lt;&lt;&quot;之间,平均值为 &quot;&lt;&lt;(hx(a,b,n)+gx(a,b,n))/2&lt;&lt;endl; } else { if(hx(b,a,n)&gt;gx(b,a,n)) cout&lt;&lt;&quot;所求积分在 &quot;&lt;&lt;-hx(b,a,n)&lt;&lt;&quot;到 &quot;&lt;&lt;-gx(b,a,n)&lt;&lt;&quot;之间,平均值为 &quot;&lt;&lt;-(hx(b,a,n)+gx(b,a,n))/2&lt;&lt;endl; else cout&lt;&lt;&quot;所求积分在 &quot;&lt;&lt;-gx(b,a,n)&lt;&lt;&quot;到 &quot;&lt;&lt;-hx(b,a,n)&lt;&lt;&quot;之间,平均值为 &quot;&lt;&lt;-(hx(b,a,n)+gx(b,a,n))/2&lt;&lt;endl; } return 0; } 尚不能修改被积函数 未完]]></content>
+      <tags>
+        <tag>c</tag>
+      </tags>
+  </entry>
+</search>
