@@ -1,26 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[c_级数]]></title>
+    <url>%2F2018%2F03%2F22%2Fc_%E7%BA%A7%E6%95%B0%2F</url>
+    <content type="text"><![CDATA[初步建立12345678910111213141516171819#include &lt;iostream&gt;#include &lt;cmath&gt;using namespace std;double fx(int x) //定义通项式&#123; double s; s=1/pow(x,2); //在此修改通项 return s;&#125;int main()&#123; int i=1;int b=10000;double t=0; cout&lt;&lt;&quot;请输入最后一项:&quot;; cin&gt;&gt;b; for(i;i&lt;=b;i++) t+=fx(i); cout&lt;&lt;&quot;结果为：&quot;&lt;&lt;t; return 0;&#125; 效果还行,但是无法获得精度 改进加入精度变量，使输入可选为最后一项或精度1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253#include &lt;iostream&gt;#include &lt;cmath&gt;using namespace std;double fx(int x) //定义通项式&#123; double s; s=1/pow(x,2); //在此修改通项 return s;&#125;bool ju() //区分计算类型&#123; int a; cout&lt;&lt;&quot;请选择计算模式。\n&quot;; cout&lt;&lt;&quot;1.输入精度\n&quot;; cout&lt;&lt;&quot;2.输入最后一项\n&quot;; cout&lt;&lt;&quot;____\b&quot;; cin&gt;&gt;a; if(a==1) return 0; else if(a==2) return 1; else cout&lt;&lt;&quot;请输入1或2&quot;; return ju();&#125;double mod1() //精度计算模式&#123; double q=0.01;int i=1;double t=0; cout&lt;&lt;&quot;请输入精度：&quot;; cin&gt;&gt;q; for(i;fx(i)&gt;=q;i++) t+=fx(i); return t;&#125;double mod2() //最后一项计算模式&#123; int i=1;int b=10000;double t=0; cout&lt;&lt;&quot;请输入最后一项:&quot;; cin&gt;&gt;b; for(i;i&lt;=b;i++) t+=fx(i); return t;&#125;int main()&#123; double t; if(ju()) t=mod2(); else t=mod1(); cout&lt;&lt;&quot;所求为：&quot;&lt;&lt;t&lt;&lt;endl; return 0;&#125; 完美运行！问题又来了，如何通项改变了怎么办，能不能输入通项呢？这与求定积分那个的问题类似，最后都归结为：如何解析输入的表达式未完]]></content>
+      <categories>
+        <category>数学工具</category>
+        <category>c</category>
+      </categories>
+      <tags>
+        <tag>c</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[关于解析数学表达式的一点构想]]></title>
     <url>%2F2018%2F03%2F20%2F%E5%85%B3%E4%BA%8E%E8%A7%A3%E6%9E%90%E6%95%B0%E5%AD%A6%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E4%B8%80%E7%82%B9%E6%9E%84%E6%83%B3%2F</url>
     <content type="text"><![CDATA[前面两篇留下了一个解析数学表达式的问题。有时不得不说c语言不适合数学建模，解析数学表达式变成一大难题。下面给出解决方案。 方案一：利用python如果这个程序用python来编，那么一定会非常愉快的，因为有个强大的函数eval()。所以不妨用python来编，然后嵌入c++。python接口：1234#解析数学表达式def fx(): a = input(&quot;请输入表达式：&quot;) return eval(a) 嵌入c后：1234567891011121314#include &quot;stdafx.h&quot;#include &quot;Python.h&quot;#include &lt;iostream&gt;using namespace std;int _tmain(int argc, _TCHAR* argv[])&#123; cin&gt;&gt;a Py_Initialize(); PyRun_SimpleString(&quot;print(eval(a)) &quot;); //输入的python命令 Py_Finalize(); getchar(); return 0;&#125; 这样就实现了在c中嵌入python并将表达式计算的过程。类比这个，前面级数和不定积分中的输入表达式就不能实现，在此不赘述。其实，前面的两个程序用python很容易实现，例如1234567891011#求级数import matha = input(&quot;请输入通项式&quot;)def ax(x): s = eval(a) return sb = int(input(&quot;请输入最后一个值:&quot;))s =0for i in range(1,b): s += ax(i)print(&quot;级数为 &#123;&#125;&quot;.format(s)) 在此不做之前的优化，只为说明eval()函数的实用性。 方案二：自己用写一个eval()函数emmmm,这个博主仍在努力]]></content>
+      <categories>
+        <category>数学工具</category>
+        <category>c+py</category>
+      </categories>
       <tags>
         <tag>c</tag>
         <tag>py</tag>
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[c_级数]]></title>
-    <url>%2F2018%2F03%2F19%2Fc_%E7%BA%A7%E6%95%B0%2F</url>
-    <content type="text"><![CDATA[初步建立12345678910111213141516171819#include &lt;iostream&gt;#include &lt;cmath&gt;using namespace std;double fx(int x) //定义通项式&#123; double s; s=1/pow(x,2); //在此修改通项 return s;&#125;int main()&#123; int i=1;int b=10000;double t=0; cout&lt;&lt;&quot;请输入最后一项:&quot;; cin&gt;&gt;b; for(i;i&lt;=b;i++) t+=fx(i); cout&lt;&lt;&quot;结果为：&quot;&lt;&lt;t; return 0;&#125; 效果还行,但是无法获得精度 改进加入精度变量，使输入可选为最后一项或精度1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253#include &lt;iostream&gt;#include &lt;cmath&gt;using namespace std;double fx(int x) //定义通项式&#123; double s; s=1/pow(x,2); //在此修改通项 return s;&#125;bool ju() //区分计算类型&#123; int a; cout&lt;&lt;&quot;请选择计算模式。\n&quot;; cout&lt;&lt;&quot;1.输入精度\n&quot;; cout&lt;&lt;&quot;2.输入最后一项\n&quot;; cout&lt;&lt;&quot;____\b&quot;; cin&gt;&gt;a; if(a==1) return 0; else if(a==2) return 1; else cout&lt;&lt;&quot;请输入1或2&quot;; return ju();&#125;double mod1() //精度计算模式&#123; double q=0.01;int i=1;double t=0; cout&lt;&lt;&quot;请输入精度：&quot;; cin&gt;&gt;q; for(i;fx(i)&gt;=q;i++) t+=fx(i); return t;&#125;double mod2() //最后一项计算模式&#123; int i=1;int b=10000;double t=0; cout&lt;&lt;&quot;请输入最后一项:&quot;; cin&gt;&gt;b; for(i;i&lt;=b;i++) t+=fx(i); return t;&#125;int main()&#123; double t; if(ju()) t=mod2(); else t=mod1(); cout&lt;&lt;&quot;所求为：&quot;&lt;&lt;t&lt;&lt;endl; return 0;&#125; 完美运行！问题又来了，如何通项改变了怎么办，能不能输入通项呢？这与求定积分那个的问题类似，最后都归结为：如何解析输入的表达式未完]]></content>
-      <tags>
-        <tag>c</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[py_requests简单爬取]]></title>
     <url>%2F2018%2F03%2F18%2Fpy_requests%E7%AE%80%E5%8D%95%E7%88%AC%E5%8F%96%2F</url>
     <content type="text"><![CDATA[学习使用requests模块爬取简单网页 首先安装requests模块pip install requests 初步建立12345import requestsurl = input(&quot;请输入地址：&quot;)r = requests.get(url)requests.encoding=&apos;utf-8&apos;print(r.text) 效果还行]]></content>
+      <categories>
+        <category>爬虫</category>
+        <category>py</category>
+      </categories>
       <tags>
         <tag>py</tag>
       </tags>
@@ -29,6 +41,10 @@
     <title><![CDATA[c_定积分]]></title>
     <url>%2F2018%2F03%2F17%2Fc_%E5%AE%9A%E7%A7%AF%E5%88%86%2F</url>
     <content type="text"><![CDATA[求定积分近似值初步建立#include &lt;iostream&gt; #include &lt;cmath&gt; using namespace std; double fx(double x=0) //定义被积函数 { double s; s=pow(2,x); //在此修改函数 return s; double gx(double a=0,double b=0,int n=1) //定义简单积分，先默认a&lt;=b { int i=1;double l=(b-a)/n;double s=0; for(i;i&lt;=n;i++) s+=fx(a+i*l); return s; } int main() //加入防错系统 { double a=0;double b=0;int n=1; cout&lt;&lt;&quot;请输入积分下限，上限，分割份数:&quot;; cin&gt;&gt;a&gt;&gt;b&gt;&gt;n; if(a&lt;=b) cout&lt;&lt;&quot;所求积分为:&quot;&lt;&lt;gx(a,b,n)&lt;&lt;endl; else cout&lt;&lt;&quot;所求积分为:&quot;&lt;&lt;-gx(b,a,n)&lt;&lt;endl; return 0; } 由于使用过剩近似值代替，误差较大，应做出改进 改进近似值#include &lt;iostream&gt; #include &lt;cmath&gt; using namespace std; double fx(double x=0) //定义被积函数 { double s; s=pow(2,x); //在此修改函数 return s; } double gx(double a=0,double b=0,int n=1) //定义简单积分，先默认a&lt;=b,过剩 { int i=1;double l=(b-a)/n;double s=0; for(i;i&lt;=n;i++) s+=fx(a+i*l); s*=l; return s; } double hx(double a=0,double b=0,int n=1) //定义简单积分，先默认a&lt;=b，不足 { int i=0;double l=(b-a)/n;double s=0; for(i;i&lt;n;i++) s+=fx(a+i*l); s*=l; return s; } int main() //加入防错系统 { double a=0;double b=0;int n=1; cout&lt;&lt;&quot;请输入积分下限，上限，分割份数:&quot;; cin&gt;&gt;a&gt;&gt;b&gt;&gt;n; if(a&lt;=b) cout&lt;&lt;&quot;所求积分在 &quot;&lt;&lt;hx(a,b,n)&lt;&lt;&quot;到 &quot;&lt;&lt;gx(a,b,n)&lt;&lt;&quot;之间,平均值为 &quot;&lt;&lt;(hx(a,b,n)+gx(a,b,n))/2&lt;&lt;endl; else cout&lt;&lt;&quot;所求积分在 &quot;&lt;&lt;-hx(b,a,n)&lt;&lt;&quot;到 &quot;&lt;&lt;-gx(b,a,n)&lt;&lt;&quot;之间,平均值为 &quot;&lt;&lt;-(hx(b,a,n)+gx(b,a,n))/2&lt;&lt;endl; return 0; } 尚不能比较两近似值大小 改进：比较近似值大小#include &lt;iostream&gt; #include &lt;cmath&gt; using namespace std; double fx(double x=0) //定义被积函数 { double s; s=pow(2,x); //在此修改函数 return s; } double gx(double a=0,double b=0,int n=1) //定义简单积分，先默认a&lt;=b,过剩 { int i=1;double l=(b-a)/n;double s=0; for(i;i&lt;=n;i++) s+=fx(a+i*l); s*=l; return s; } double hx(double a=0,double b=0,int n=1) //定义简单积分，先默认a&lt;=b，不足 { int i=0;double l=(b-a)/n;double s=0; for(i;i&lt;n;i++) s+=fx(a+i*l); s*=l; return s; } int main() //加入防错系统 { double a=0;double b=0;int n=1; cout&lt;&lt;&quot;请输入积分下限，上限，分割份数:&quot;; cin&gt;&gt;a&gt;&gt;b&gt;&gt;n; if(a&lt;=b) { if(hx(a,b,n)&lt;gx(a,b,n)) cout&lt;&lt;&quot;所求积分在 &quot;&lt;&lt;hx(a,b,n)&lt;&lt;&quot;到 &quot;&lt;&lt;gx(a,b,n)&lt;&lt;&quot;之间,平均值为 &quot;&lt;&lt;(hx(a,b,n)+gx(a,b,n))/2&lt;&lt;endl; else cout&lt;&lt;&quot;所求积分在 &quot;&lt;&lt;gx(a,b,n)&lt;&lt;&quot;到 &quot;&lt;&lt;hx(a,b,n)&lt;&lt;&quot;之间,平均值为 &quot;&lt;&lt;(hx(a,b,n)+gx(a,b,n))/2&lt;&lt;endl; } else { if(hx(b,a,n)&gt;gx(b,a,n)) cout&lt;&lt;&quot;所求积分在 &quot;&lt;&lt;-hx(b,a,n)&lt;&lt;&quot;到 &quot;&lt;&lt;-gx(b,a,n)&lt;&lt;&quot;之间,平均值为 &quot;&lt;&lt;-(hx(b,a,n)+gx(b,a,n))/2&lt;&lt;endl; else cout&lt;&lt;&quot;所求积分在 &quot;&lt;&lt;-gx(b,a,n)&lt;&lt;&quot;到 &quot;&lt;&lt;-hx(b,a,n)&lt;&lt;&quot;之间,平均值为 &quot;&lt;&lt;-(hx(b,a,n)+gx(b,a,n))/2&lt;&lt;endl; } return 0; } 尚不能修改被积函数 未完]]></content>
+      <categories>
+        <category>数学工具</category>
+        <category>c</category>
+      </categories>
       <tags>
         <tag>c</tag>
       </tags>

@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next gemini use-motion" lang="zh-Hans">
+<html class="theme-next muse use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="nonviocestudy" />
+  <meta name="keywords" content="," />
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="just for studying">
+<meta name="description" content="求定积分近似值初步建立#include &amp;lt;iostream&amp;gt; #include &amp;lt;cmath&amp;gt; using namespace std;     double fx(double x=0)    //定义被积函数 {     double s;      s=pow(2,x);    //在此修改函数     return s;  double gx(double a=0,">
+<meta name="keywords" content="c">
 <meta property="og:type" content="website">
-<meta property="og:title" content="nonvioce">
-<meta property="og:url" content="http://yoursite.com/archives/2018/03/index.html">
+<meta property="og:title" content="c_定积分">
+<meta property="og:url" content="http://yoursite.com/c/c_定积分.html">
 <meta property="og:site_name" content="nonvioce">
-<meta property="og:description" content="just for studying">
+<meta property="og:description" content="求定积分近似值初步建立#include &amp;lt;iostream&amp;gt; #include &amp;lt;cmath&amp;gt; using namespace std;     double fx(double x=0)    //定义被积函数 {     double s;      s=pow(2,x);    //在此修改函数     return s;  double gx(double a=0,">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-03-18T07:59:52.278Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="nonvioce">
-<meta name="twitter:description" content="just for studying">
+<meta name="twitter:title" content="c_定积分">
+<meta name="twitter:description" content="求定积分近似值初步建立#include &amp;lt;iostream&amp;gt; #include &amp;lt;cmath&amp;gt; using namespace std;     double fx(double x=0)    //定义被积函数 {     double s;      s=pow(2,x);    //在此修改函数     return s;  double gx(double a=0,">
 
 
 
@@ -96,7 +98,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Gemini',
+    scheme: 'Muse',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2018/03/"/>
+  <link rel="canonical" href="http://yoursite.com/c/c_定积分.html"/>
 
 
 
 
 
-  <title>归档 | nonvioce</title>
+  <title>c_定积分 | nonvioce</title>
   
 
 
@@ -143,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -209,16 +211,6 @@
         </li>
       
         
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
@@ -235,6 +227,36 @@
               <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
             
             站点地图
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-c++">
+          <a href="/c/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            c++
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-python">
+          <a href="/py/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            python
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-杂草">
+          <a href="/杂草/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            杂草
           </a>
         </li>
       
@@ -295,185 +317,148 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
 
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        嗯..! 目前共计 4 篇日志。 继续努力。
-      </span>
+	<h1 class="post-title" itemprop="name headline">c_定积分</h1>
+
+
+
+</header>
 
       
+      
+      
+      <div class="post-body">
+        
+        
+          <h2 id="求定积分近似值"><a href="#求定积分近似值" class="headerlink" title="求定积分近似值"></a>求定积分近似值</h2><h3 id="初步建立"><a href="#初步建立" class="headerlink" title="初步建立"></a>初步建立</h3><pre><code>#include &lt;iostream&gt;
+#include &lt;cmath&gt;
+using namespace std;    
+double fx(double x=0)    //定义被积函数
+{
+    double s;
+     s=pow(2,x);    //在此修改函数
+    return s;
+
+double gx(double a=0,double b=0,int n=1)    //定义简单积分，先默认a&lt;=b
+{
+    int i=1;double l=(b-a)/n;double s=0;
+    for(i;i&lt;=n;i++)
+        s+=fx(a+i*l);
+    return s;
+}    
+int main()    //加入防错系统
+{
+    double a=0;double b=0;int n=1;
+    cout&lt;&lt;&quot;请输入积分下限，上限，分割份数:&quot;;
+    cin&gt;&gt;a&gt;&gt;b&gt;&gt;n;
+    if(a&lt;=b)
+        cout&lt;&lt;&quot;所求积分为:&quot;&lt;&lt;gx(a,b,n)&lt;&lt;endl;
+    else
+        cout&lt;&lt;&quot;所求积分为:&quot;&lt;&lt;-gx(b,a,n)&lt;&lt;endl;
+    return 0;
+}
+</code></pre><p>由于使用过剩近似值代替，误差较大，应做出改进</p>
+<h3 id="改进近似值"><a href="#改进近似值" class="headerlink" title="改进近似值"></a>改进近似值</h3><pre><code>#include &lt;iostream&gt;
+#include &lt;cmath&gt;
+using namespace std;    
+double fx(double x=0)    //定义被积函数
+{
+    double s;
+     s=pow(2,x);    //在此修改函数
+    return s;
+}    
+double gx(double a=0,double b=0,int n=1)    //定义简单积分，先默认a&lt;=b,过剩
+{
+    int i=1;double l=(b-a)/n;double s=0;
+    for(i;i&lt;=n;i++)
+        s+=fx(a+i*l);
+    s*=l;
+    return s;
+}    
+double hx(double a=0,double b=0,int n=1)    //定义简单积分，先默认a&lt;=b，不足
+{
+    int i=0;double l=(b-a)/n;double s=0;
+    for(i;i&lt;n;i++)
+        s+=fx(a+i*l);
+    s*=l;
+    return s;
+}    
+int main()    //加入防错系统
+{
+    double a=0;double b=0;int n=1;
+    cout&lt;&lt;&quot;请输入积分下限，上限，分割份数:&quot;;
+    cin&gt;&gt;a&gt;&gt;b&gt;&gt;n;
+    if(a&lt;=b)
+        cout&lt;&lt;&quot;所求积分在  &quot;&lt;&lt;hx(a,b,n)&lt;&lt;&quot;到  &quot;&lt;&lt;gx(a,b,n)&lt;&lt;&quot;之间,平均值为  &quot;&lt;&lt;(hx(a,b,n)+gx(a,b,n))/2&lt;&lt;endl;
+    else
+        cout&lt;&lt;&quot;所求积分在  &quot;&lt;&lt;-hx(b,a,n)&lt;&lt;&quot;到  &quot;&lt;&lt;-gx(b,a,n)&lt;&lt;&quot;之间,平均值为  &quot;&lt;&lt;-(hx(b,a,n)+gx(b,a,n))/2&lt;&lt;endl;
+    return 0;
+}
+</code></pre><p>尚不能比较两近似值大小</p>
+<h3 id="改进：比较近似值大小"><a href="#改进：比较近似值大小" class="headerlink" title="改进：比较近似值大小"></a>改进：比较近似值大小</h3><pre><code>#include &lt;iostream&gt;
+#include &lt;cmath&gt;
+using namespace std;    
+double fx(double x=0)    //定义被积函数
+{
+    double s;
+     s=pow(2,x);    //在此修改函数
+    return s;
+}    
+double gx(double a=0,double b=0,int n=1)    //定义简单积分，先默认a&lt;=b,过剩
+{
+    int i=1;double l=(b-a)/n;double s=0;
+    for(i;i&lt;=n;i++)
+        s+=fx(a+i*l);
+    s*=l;
+    return s;
+}    
+double hx(double a=0,double b=0,int n=1)    //定义简单积分，先默认a&lt;=b，不足
+{
+    int i=0;double l=(b-a)/n;double s=0;
+    for(i;i&lt;n;i++)
+        s+=fx(a+i*l);
+    s*=l;
+    return s;
+}    
+int main()    //加入防错系统
+{
+    double a=0;double b=0;int n=1;
+    cout&lt;&lt;&quot;请输入积分下限，上限，分割份数:&quot;;
+    cin&gt;&gt;a&gt;&gt;b&gt;&gt;n;
+    if(a&lt;=b)
+    {
+        if(hx(a,b,n)&lt;gx(a,b,n))
+            cout&lt;&lt;&quot;所求积分在  &quot;&lt;&lt;hx(a,b,n)&lt;&lt;&quot;到  &quot;&lt;&lt;gx(a,b,n)&lt;&lt;&quot;之间,平均值为  &quot;&lt;&lt;(hx(a,b,n)+gx(a,b,n))/2&lt;&lt;endl;
+        else
+            cout&lt;&lt;&quot;所求积分在  &quot;&lt;&lt;gx(a,b,n)&lt;&lt;&quot;到  &quot;&lt;&lt;hx(a,b,n)&lt;&lt;&quot;之间,平均值为  &quot;&lt;&lt;(hx(a,b,n)+gx(a,b,n))/2&lt;&lt;endl;
+    }
+    else
+    {
+        if(hx(b,a,n)&gt;gx(b,a,n))
+            cout&lt;&lt;&quot;所求积分在  &quot;&lt;&lt;-hx(b,a,n)&lt;&lt;&quot;到  &quot;&lt;&lt;-gx(b,a,n)&lt;&lt;&quot;之间,平均值为  &quot;&lt;&lt;-(hx(b,a,n)+gx(b,a,n))/2&lt;&lt;endl;
+        else
+            cout&lt;&lt;&quot;所求积分在  &quot;&lt;&lt;-gx(b,a,n)&lt;&lt;&quot;到  &quot;&lt;&lt;-hx(b,a,n)&lt;&lt;&quot;之间,平均值为  &quot;&lt;&lt;-(hx(b,a,n)+gx(b,a,n))/2&lt;&lt;endl;
+    }
+    return 0;
+}
+</code></pre><p>尚不能修改被积函数<br>    未完</p>
 
         
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/22/c_级数/" itemprop="url">
-              
-                <span itemprop="name">c_级数</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-22T18:16:11+08:00"
-              content="2018-03-22" >
-          03-22
-        </time>
       </div>
-
-    </header>
-  </article>
-
-
-
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/20/关于解析数学表达式的一点构想/" itemprop="url">
-              
-                <span itemprop="name">关于解析数学表达式的一点构想</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-20T19:31:54+08:00"
-              content="2018-03-20" >
-          03-20
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/18/py_requests简单爬取/" itemprop="url">
-              
-                <span itemprop="name">py_requests简单爬取</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-18T15:46:11+08:00"
-              content="2018-03-18" >
-          03-18
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/17/c_定积分/" itemprop="url">
-              
-                <span itemprop="name">c_定积分</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-17T20:09:13+08:00"
-              content="2018-03-17" >
-          03-17
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
   </div>
-  
-  
-  
-
-  
-
 
 
           </div>
@@ -481,6 +466,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDk3OC8xMTUxNQ=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -501,8 +495,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -523,15 +526,6 @@
               </div>
             
 
-            
-              
-              
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">5</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
             
 
             
@@ -601,6 +595,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#求定积分近似值"><span class="nav-number">1.</span> <span class="nav-text">求定积分近似值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初步建立"><span class="nav-number">1.1.</span> <span class="nav-text">初步建立</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#改进近似值"><span class="nav-number">1.2.</span> <span class="nav-text">改进近似值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#改进：比较近似值大小"><span class="nav-number">1.3.</span> <span class="nav-text">改进：比较近似值大小</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -632,7 +642,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
 
 
 
@@ -732,14 +742,11 @@
   
   
 
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
-
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -768,6 +775,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 

@@ -7,35 +7,38 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/2018/03/18/py_requests%E7%AE%80%E5%8D%95%E7%88%AC%E5%8F%96/</loc>
-        <lastmod>2018-03-22T10:17:18.260Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://yoursite.com/2018/03/20/%E5%85%B3%E4%BA%8E%E8%A7%A3%E6%9E%90%E6%95%B0%E5%AD%A6%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E4%B8%80%E7%82%B9%E6%9E%84%E6%83%B3/</loc>
-        <lastmod>2018-03-22T10:16:53.411Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://yoursite.com/2018/03/17/c_%E5%AE%9A%E7%A7%AF%E5%88%86/</loc>
+        <loc>http://yoursite.com/categories/%E6%95%B0%E5%AD%A6%E5%B7%A5%E5%85%B7/c/</loc>
         <lastmod>2018-03-22T10:16:38.523Z</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
+        <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite.com/2018/03/22/c_%E7%BA%A7%E6%95%B0/</loc>
-        <lastmod>2018-03-22T10:16:11.626Z</lastmod>
+        <loc>http://yoursite.com/categories/%E6%95%B0%E5%AD%A6%E5%B7%A5%E5%85%B7/</loc>
+        <lastmod>2018-03-22T10:16:53.411Z</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.2</priority>
+    </url>
 
+    <url>
+        <loc>http://yoursite.com/categories/%E6%95%B0%E5%AD%A6%E5%B7%A5%E5%85%B7/c-py/</loc>
+        <lastmod>2018-03-22T10:16:53.411Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/categories/%E7%88%AC%E8%99%AB/</loc>
+        <lastmod>2018-03-22T10:17:18.260Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/categories/%E7%88%AC%E8%99%AB/py/</loc>
+        <lastmod>2018-03-22T10:17:18.260Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
     </url>
 
 </urlset>
