@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="nonviocestudy" />
+  <meta name="keywords" content="c," />
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="just for studying">
-<meta property="og:type" content="website">
-<meta property="og:title" content="nonvioce">
-<meta property="og:url" content="http://yoursite.com/archives/2018/03/index.html">
+<meta name="description" content="几个按位运算符（c++)（本文不考虑‘～’运算）因为按位运算是一位一位的算，所以先考虑其任意一位即可。比如：10010&amp;amp;01011，我们人类计算时一般就会从左往右一位位的算，先算1&amp;amp;&amp;amp;0=0,然后0&amp;amp;&amp;amp;1=0,然后0&amp;amp;&amp;amp;0=0,然后1&amp;amp;&amp;amp;1=1,然后0&amp;amp;&amp;amp;1=0,所以得00010。所以，下文就先考虑其中任意一位">
+<meta name="keywords" content="c">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于位运算">
+<meta property="og:url" content="http://yoursite.com/2018/03/23/关于位运算/index.html">
 <meta property="og:site_name" content="nonvioce">
-<meta property="og:description" content="just for studying">
+<meta property="og:description" content="几个按位运算符（c++)（本文不考虑‘～’运算）因为按位运算是一位一位的算，所以先考虑其任意一位即可。比如：10010&amp;amp;01011，我们人类计算时一般就会从左往右一位位的算，先算1&amp;amp;&amp;amp;0=0,然后0&amp;amp;&amp;amp;1=0,然后0&amp;amp;&amp;amp;0=0,然后1&amp;amp;&amp;amp;1=1,然后0&amp;amp;&amp;amp;1=0,所以得00010。所以，下文就先考虑其中任意一位">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-03-23T10:14:59.633Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="nonvioce">
-<meta name="twitter:description" content="just for studying">
+<meta name="twitter:title" content="关于位运算">
+<meta name="twitter:description" content="几个按位运算符（c++)（本文不考虑‘～’运算）因为按位运算是一位一位的算，所以先考虑其任意一位即可。比如：10010&amp;amp;01011，我们人类计算时一般就会从左往右一位位的算，先算1&amp;amp;&amp;amp;0=0,然后0&amp;amp;&amp;amp;1=0,然后0&amp;amp;&amp;amp;0=0,然后1&amp;amp;&amp;amp;1=1,然后0&amp;amp;&amp;amp;1=0,所以得00010。所以，下文就先考虑其中任意一位">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2018/03/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/23/关于位运算/"/>
 
 
 
 
 
-  <title>归档 | nonvioce</title>
+  <title>关于位运算 | nonvioce</title>
   
 
 
@@ -143,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -295,222 +297,202 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/23/关于位运算/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nonvioce">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="nonvioce">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">关于位运算</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-23T17:17:55+08:00">
+                2018-03-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 5 篇日志。 继续努力。
-      </span>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/杂乱的知识/" itemprop="url" rel="index">
+                    <span itemprop="name">杂乱的知识</span>
+                  </a>
+                </span>
 
-      
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/杂乱的知识/运算/" itemprop="url" rel="index">
+                    <span itemprop="name">运算</span>
+                  </a>
+                </span>
 
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
 
-        
+          
+            
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/23/关于位运算/" itemprop="url">
-              
-                <span itemprop="name">关于位运算</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-23T17:17:55+08:00"
-              content="2018-03-23" >
-          03-23
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+          
 
+        </div>
+      </header>
+    
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/22/c_级数/" itemprop="url">
-              
-                <span itemprop="name">c_级数</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-22T18:16:11+08:00"
-              content="2018-03-22" >
-          03-22
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/20/关于解析数学表达式的一点构想/" itemprop="url">
-              
-                <span itemprop="name">关于解析数学表达式的一点构想</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-20T19:31:54+08:00"
-              content="2018-03-20" >
-          03-20
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <h2 id="几个按位运算符（c"><a href="#几个按位运算符（c" class="headerlink" title="几个按位运算符（c++)"></a>几个按位运算符（c++)</h2><p><em>（本文不考虑‘～’运算）</em><br>因为按位运算是一位一位的算，所以先考虑其任意一位即可。<br>比如：10010&amp;01011，我们人类计算时一般就会从左往右一位位的算，先算1&amp;&amp;0=0,然后0&amp;&amp;1=0,然后0&amp;&amp;0=0,然后1&amp;&amp;1=1,然后0&amp;&amp;1=0,所以得00010。<br>所以，下文就先考虑其中任意一位产生的效果。<br><strong>假设有数a，与另一个数b进行运算，考虑其中任意一位：</strong>  </p>
+<h3 id="先看-amp"><a href="#先看-amp" class="headerlink" title="先看&amp;"></a>先看&amp;</h3><p><em>（都为1时结果为1）</em><br>如果b的这一位是0,那么</p>
+<ol>
+<li>如果a的这位是0,这位的结果为0;</li>
+<li>如果a的这位是1,这位的结果为0;<br>总之，无论如何都是0,为了方便书写，我们暂且记做?&amp;0=0（用问号表示与0运算的那个数）<br><em>这样写是不对的</em><br>如果b的这一位是1,那么</li>
+<li>如果a的这位是0,这位的结果为0;</li>
+<li>如果a的这位是1,这位的结果为1;<br>总之，无论如何都不变,为了方便书写，我们暂且记做？&amp;0，？不变<br><em>这样写是不对的</em><h3 id="再看"><a href="#再看" class="headerlink" title="再看|"></a>再看|</h3><em>（有一个为1结果为1）</em><br>同理有：<br>？|0,？不变<br>？|1=1  <h3 id="还有"><a href="#还有" class="headerlink" title="还有^"></a>还有^</h3><em>（不一样时结果为1）</em><br>同理有：<br>？^1,？取反（1变成0,0变成1）<br>？^0,？不变<h2 id="拿到一起"><a href="#拿到一起" class="headerlink" title="拿到一起"></a>拿到一起</h2></li>
+</ol>
+<ul>
+<li>&amp;0,0</li>
+<li>&amp;1,不变</li>
+<li>|0,不变</li>
+<li>|1,1</li>
+<li>^1,取反</li>
+<li>^0,不变<h2 id="解决问题"><a href="#解决问题" class="headerlink" title="解决问题"></a>解决问题</h2>直接举个例子：<br>现有一个8位二进制的整数a，请你通过位运算使前四位不变，五六位取反，第七位变为1,第八位变为0。<br>我们是正常人，不妨就从左往右算：  </li>
+</ul>
+<ol>
+<li>前四位不变，先不管  </li>
+<li>五六位取反，考虑^1,那么运算应该是a^_ _ _ _ 1 1 _ _,如何填入剩下的呢？都是0,让其不变。所以第一步运算为a^00001100  </li>
+<li>然后第七位变为1,考虑|1,也就是用第一步运算结果|_ _ _ _ _ _ 1 _,为了使剩下的不变，别的都取0。式子变为（a^00001100)|00000010  </li>
+<li>然后第8位变为0,考虑&amp;0，也就是用第二步运算结果&amp;_ _ _ _ _ _ _ 0,为了使剩下的不变，别的都取1。式子变为（（a^00001100)|00000010）&amp;11111110  </li>
+<li>不想用括号，按位运算是左结合的，把式子变为11111110&amp;00000010|00001100^a<br>OK,大功告成，这样得出的结果不一定是最简单的，但是比较容易想。</li>
+</ol>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/18/py_requests简单爬取/" itemprop="url">
-              
-                <span itemprop="name">py_requests简单爬取</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-18T15:46:11+08:00"
-              content="2018-03-18" >
-          03-18
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/17/c_定积分/" itemprop="url">
-              
-                <span itemprop="name">c_定积分</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-17T20:09:13+08:00"
-              content="2018-03-17" >
-          03-17
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/c/" rel="tag"># c</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/22/c_级数/" rel="next" title="c_级数">
+                <i class="fa fa-chevron-left"></i> c_级数
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -518,6 +500,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDk3OC8xMTUxNQ=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -538,8 +529,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -637,6 +637,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#几个按位运算符（c"><span class="nav-number">1.</span> <span class="nav-text">几个按位运算符（c++)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#先看-amp"><span class="nav-number">1.1.</span> <span class="nav-text">先看&amp;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#再看"><span class="nav-number">1.2.</span> <span class="nav-text">再看|</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#还有"><span class="nav-number">1.3.</span> <span class="nav-text">还有^</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#拿到一起"><span class="nav-number">2.</span> <span class="nav-text">拿到一起</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决问题"><span class="nav-number">3.</span> <span class="nav-text">解决问题</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -770,6 +786,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -798,6 +818,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
