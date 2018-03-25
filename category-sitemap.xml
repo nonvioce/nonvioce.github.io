@@ -50,14 +50,14 @@
 
     <url>
         <loc>http://yoursite.com/categories/%E6%95%B0%E5%AD%A6%E5%B7%A5%E5%85%B7/</loc>
-        <lastmod>2018-03-25T07:04:41.132Z</lastmod>
+        <lastmod>2018-03-25T11:34:26.160Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://yoursite.com/categories/%E6%95%B0%E5%AD%A6%E5%B7%A5%E5%85%B7/py/</loc>
-        <lastmod>2018-03-25T07:04:41.132Z</lastmod>
+        <lastmod>2018-03-25T11:34:26.160Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

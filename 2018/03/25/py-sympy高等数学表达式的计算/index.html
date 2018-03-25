@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="本来在研究如何用迭代法解任意方程，不料发现了一个强大的数学工具——sympy。官网  http://www.sympy.org 首先安装这个看官网啦，博主是这样安装的：    pip install sympy 使用博主也在学习，这里举几个常用的 解方程举个例子吧123from sympy import symbolsfrom sympy import solvesolve(x**2 - 2, x">
+<meta name="description" content="本来在研究如何用迭代法解任意方程，不料发现了一个强大的数学工具——sympy。官网  http://www.sympy.org 首先安装这个看官网啦，博主是这样安装的：    pip install sympy 使用博主也在学习，这里举几个常用的 解方程举个例子吧1234from sympy import symbolsfrom sympy import solvex = symbol(&amp;apos">
 <meta name="keywords" content="py">
 <meta property="og:type" content="article">
 <meta property="og:title" content="py_sympy高等数学表达式的计算">
 <meta property="og:url" content="http://yoursite.com/2018/03/25/py-sympy高等数学表达式的计算/index.html">
 <meta property="og:site_name" content="nonvioce">
-<meta property="og:description" content="本来在研究如何用迭代法解任意方程，不料发现了一个强大的数学工具——sympy。官网  http://www.sympy.org 首先安装这个看官网啦，博主是这样安装的：    pip install sympy 使用博主也在学习，这里举几个常用的 解方程举个例子吧123from sympy import symbolsfrom sympy import solvesolve(x**2 - 2, x">
+<meta property="og:description" content="本来在研究如何用迭代法解任意方程，不料发现了一个强大的数学工具——sympy。官网  http://www.sympy.org 首先安装这个看官网啦，博主是这样安装的：    pip install sympy 使用博主也在学习，这里举几个常用的 解方程举个例子吧1234from sympy import symbolsfrom sympy import solvex = symbol(&amp;apos">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-25T07:04:41.132Z">
+<meta property="og:updated_time" content="2018-03-25T11:34:26.160Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="py_sympy高等数学表达式的计算">
-<meta name="twitter:description" content="本来在研究如何用迭代法解任意方程，不料发现了一个强大的数学工具——sympy。官网  http://www.sympy.org 首先安装这个看官网啦，博主是这样安装的：    pip install sympy 使用博主也在学习，这里举几个常用的 解方程举个例子吧123from sympy import symbolsfrom sympy import solvesolve(x**2 - 2, x">
+<meta name="twitter:description" content="本来在研究如何用迭代法解任意方程，不料发现了一个强大的数学工具——sympy。官网  http://www.sympy.org 首先安装这个看官网啦，博主是这样安装的：    pip install sympy 使用博主也在学习，这里举几个常用的 解方程举个例子吧1234from sympy import symbolsfrom sympy import solvex = symbol(&amp;apos">
 
 
 
@@ -414,7 +414,7 @@
         <p>本来在研究如何用迭代法解任意方程，不料发现了一个强大的数学工具——sympy。<br>官网  <a href="http://www.sympy.org" target="_blank" rel="noopener">http://www.sympy.org</a></p>
 <h2 id="首先安装"><a href="#首先安装" class="headerlink" title="首先安装"></a>首先安装</h2><p>这个看官网啦，博主是这样安装的：<br>    pip install sympy</p>
 <h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>博主也在学习，这里举几个常用的</p>
-<h3 id="解方程"><a href="#解方程" class="headerlink" title="解方程"></a>解方程</h3><p>举个例子吧<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">from sympy import symbols</span><br><span class="line">from sympy import solve</span><br><span class="line">solve(x**2 - 2, x)</span><br></pre></td></tr></table></figure></p>
+<h3 id="解方程"><a href="#解方程" class="headerlink" title="解方程"></a>解方程</h3><p>举个例子吧<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">from sympy import symbols</span><br><span class="line">from sympy import solve</span><br><span class="line">x = symbol(&apos;x&apos;)</span><br><span class="line">solve(x**2 - 2, x)</span><br></pre></td></tr></table></figure></p>
 <p>这样就解出来了，当然啦，还有更详细的用法，这里就不介绍了。  </p>
 <h3 id="求导"><a href="#求导" class="headerlink" title="求导"></a>求导</h3><p>diff  </p>
 <h3 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h3><p>integrate<br><strong>是不是不过瘾呢？这里先综述一下，以后再细细介绍。</strong></p>

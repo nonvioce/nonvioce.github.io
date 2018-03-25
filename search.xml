@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[py_sympy高等数学表达式的计算]]></title>
     <url>%2F2018%2F03%2F25%2Fpy-sympy%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E8%AE%A1%E7%AE%97%2F</url>
-    <content type="text"><![CDATA[本来在研究如何用迭代法解任意方程，不料发现了一个强大的数学工具——sympy。官网 http://www.sympy.org 首先安装这个看官网啦，博主是这样安装的： pip install sympy 使用博主也在学习，这里举几个常用的 解方程举个例子吧123from sympy import symbolsfrom sympy import solvesolve(x**2 - 2, x) 这样就解出来了，当然啦，还有更详细的用法，这里就不介绍了。 求导diff 积分integrate是不是不过瘾呢？这里先综述一下，以后再细细介绍。]]></content>
+    <content type="text"><![CDATA[本来在研究如何用迭代法解任意方程，不料发现了一个强大的数学工具——sympy。官网 http://www.sympy.org 首先安装这个看官网啦，博主是这样安装的： pip install sympy 使用博主也在学习，这里举几个常用的 解方程举个例子吧1234from sympy import symbolsfrom sympy import solvex = symbol(&apos;x&apos;)solve(x**2 - 2, x) 这样就解出来了，当然啦，还有更详细的用法，这里就不介绍了。 求导diff 积分integrate是不是不过瘾呢？这里先综述一下，以后再细细介绍。]]></content>
       <categories>
         <category>数学工具</category>
         <category>py</category>
