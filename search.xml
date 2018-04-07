@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[关于app]]></title>
+    <url>%2F2018%2F04%2F07%2F%E5%85%B3%E4%BA%8Eapp%2F</url>
+    <content type="text"><![CDATA[好久没更啦，博主最近有点忙。忽然发现小伙伴们都对做app有兴趣，其实呢写android的app不一定就要用java语言的，这里就介绍一下下面几种方法不用java写app。 网页转app 其实呢，严格来说这个并不算写app啦。原理就是利用第三方软件将网页打包成app。会HTML的小伙伴可以自己购买一个域名发布一个网页然后打包，虽然很显然这样是浪费。当然我们也可以打包别人的网页啦，比如打包这个http://www.windows93.net,效果还是很好的，这样的目的呢只能是方便啦。 关于这种第三方软件呢，推荐一个app，Fusion App,酷安https://www.coolapk.com能够找到。至于怎么用呢，看作者的教程吧。 用C++写 其实用C++写也是可以的，不过我们不能用原来的编译器了。看这个吧http://www.cocoachina.com/bbs/read.php?tid=333937，当然，也有别的，比比如有个app叫AIDE也能做到。不过博主都不喜欢，因为还有一种方法更好。 用python写 超级语言就是有优势，python有一个第三方库kivy，可以实现这一点。官网https://kivy.org/。具体怎么用，博主也只是入门，就不介绍了。 如果这还不能满足你，老老实实学java吧。]]></content>
+      <categories>
+        <category>杂乱的知识</category>
+        <category>app</category>
+      </categories>
+      <tags>
+        <tag>py</tag>
+        <tag>c++</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[py_sympy高等数学表达式的计算]]></title>
     <url>%2F2018%2F03%2F25%2Fpy-sympy%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E8%AE%A1%E7%AE%97%2F</url>
     <content type="text"><![CDATA[本来在研究如何用迭代法解任意方程，不料发现了一个强大的数学工具——sympy。官网 http://www.sympy.org 首先安装这个看官网啦，博主是这样安装的： pip install sympy 使用博主也在学习，这里举几个常用的 解方程举个例子吧1234from sympy import symbolsfrom sympy import solvex = symbol(&apos;x&apos;)solve(x**2 - 2, x) 这样就解出来了，当然啦，还有更详细的用法，这里就不介绍了。 求导diff 积分integrate是不是不过瘾呢？这里先综述一下，以后再细细介绍。]]></content>
@@ -45,8 +58,8 @@
         <category>c+py</category>
       </categories>
       <tags>
-        <tag>c</tag>
         <tag>py</tag>
+        <tag>c</tag>
       </tags>
   </entry>
   <entry>
