@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[入坑js]]></title>
+    <url>%2F2018%2F04%2F25%2F%E5%85%A5%E5%9D%91js%2F</url>
+    <content type="text"><![CDATA[好久没来了，博主最近入坑JavaScript了，感觉和C有些像。 永远的开头hello,world1document.write(&quot;hello,world&quot;) 另外，在js里弹窗很容易写。1alert(&quot;helo,world&quot;) js主要还是嵌入HTML中啦，对于学爬虫大有好处，所以才入的坑。]]></content>
+      <categories>
+        <category>爬虫</category>
+        <category>js</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[关于app]]></title>
     <url>%2F2018%2F04%2F07%2F%E5%85%B3%E4%BA%8Eapp%2F</url>
     <content type="text"><![CDATA[好久没更啦，博主最近有点忙。忽然发现小伙伴们都对做app有兴趣，其实呢写android的app不一定就要用java语言的，这里就介绍一下下面几种方法不用java写app。 网页转app 其实呢，严格来说这个并不算写app啦。原理就是利用第三方软件将网页打包成app。会HTML的小伙伴可以自己购买一个域名发布一个网页然后打包，虽然很显然这样是浪费。当然我们也可以打包别人的网页啦，比如打包这个http://www.windows93.net,效果还是很好的，这样的目的呢只能是方便啦。 关于这种第三方软件呢，推荐一个app，Fusion App,酷安https://www.coolapk.com能够找到。至于怎么用呢，看作者的教程吧。 用C++写 其实用C++写也是可以的，不过我们不能用原来的编译器了。看这个吧http://www.cocoachina.com/bbs/read.php?tid=333937，当然，也有别的，比比如有个app叫AIDE也能做到。不过博主都不喜欢，因为还有一种方法更好。 用python写 超级语言就是有优势，python有一个第三方库kivy，可以实现这一点。官网https://kivy.org/。具体怎么用，博主也只是入门，就不介绍了。 如果这还不能满足你，老老实实学java吧。]]></content>
@@ -58,8 +70,8 @@
         <category>c+py</category>
       </categories>
       <tags>
-        <tag>py</tag>
         <tag>c</tag>
+        <tag>py</tag>
       </tags>
   </entry>
   <entry>
