@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[无题]]></title>
+    <url>%2F2018%2F05%2F31%2F%E6%97%A0%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[先来一首诗。 相见时难别亦难，东风无力百花残。春蚕到死丝方尽，蜡炬成灰泪始干。晓镜但愁云鬓改，夜吟应觉月光寒。蓬山此去无多路，青鸟殷勤为探看。 不只为何，总感觉此时此景与此诗非常般配。 回一回头 两年前的今天，坐在教室里刷着题，胡思乱想的一些不该想的东西，期待着一周后的“高考节”——放假两三天。此时，意气风发，心中有着自己的理想。 去年今日，漫不经心的拿起一份试卷，随便扫一眼，感觉差不多会了，会的跳过，不会的做一下，好了，下一份。有面临大敌的激动，也有结束“苦难”的期待，还有对即将来临的考试结果的云淡风轻，更有临别惜别的伤感。 今天，闹钟响了几次还是没有起床，一直到快要迟到才起床。急匆匆地去吃了早点，踩着时间点去上课。上课干什么呢？睡觉，玩手机。 一些难以言表的事勾起了这样的回忆。不回忆就不会伤感，也许就是这样的。好啦，胡说八道多了不好。说两正事吧。 高考加油 “2018年的地球为你们而转动”！真的，很严肃。这话说给谁听自己心里有数，无论看到与否说了就好。不会说话，总之不要在意便是。 好久没更 先来波检讨。这个……只能说确实忙。定时无法保证质量，还是不定时吧。有时间来写写，自己读读就好。 随意评论，随意回复。]]></content>
+      <categories>
+        <category>杂草</category>
+      </categories>
+      <tags>
+        <tag>杂草</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[入坑js]]></title>
     <url>%2F2018%2F04%2F25%2F%E5%85%A5%E5%9D%91js%2F</url>
     <content type="text"><![CDATA[好久没来了，博主最近入坑JavaScript了，感觉和C有些像。 永远的开头hello,world1document.write(&quot;hello,world&quot;) 另外，在js里弹窗很容易写。1alert(&quot;helo,world&quot;) js主要还是嵌入HTML中啦，对于学爬虫大有好处，所以才入的坑。]]></content>
@@ -70,8 +81,8 @@
         <category>c+py</category>
       </categories>
       <tags>
-        <tag>c</tag>
         <tag>py</tag>
+        <tag>c</tag>
       </tags>
   </entry>
   <entry>
